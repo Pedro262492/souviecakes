@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Souvie Bolos & Potes</title>
+
+    <meta name="description" content="Bolos de pote artesanais da Souvie. Sabor que vira lembrança.">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <!-- TROCAR PELA LOGO -->
+
+            <img src="Group 4 (1).png" alt="Logo Souvie" class="logo">
+
+            <h1>Souvie</h1>
+
+        </div>
+
+        <nav>
+
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#sabores">Sabores</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#favoritos">Favoritos</a>
+            <a href="#faq">FAQ</a>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+
+            <h2>Sabor que vira lembrança.</h2>
+
+            <p>
+                Bolos de pote artesanais feitos com carinho para adoçar seus momentos.
+            </p>
+
+            <a href="#sabores" class="btn">
+                Ver Sabores
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <!-- TROCAR PELO MASCOTE -->
+
+            <img src="Group 5.png" alt="Mascote Souvie">
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE -->
+
+    <section id="sobre" class="sobre">
+
+        <h2>Sobre a Souvie</h2>
+
+        <p>
+            A Souvie nasceu da paixão por criar sobremesas que despertam memórias afetivas.
+            Inspirada na estética vintage e no charme dos desenhos clássicos, cada bolo de pote
+            é preparado artesanalmente para proporcionar uma experiência única.
+        </p>
+
+    </section>
+
+    <!-- SABORES -->
+
+    <section id="sabores" class="sabores">
+
+        <h2>Nossos Sabores</h2>
+
+        <div class="cards">
+
+            <!-- PRESTÍGIO -->
+
+            <div class="card">
+
+                <img src="img/prestigio.jpg" alt="Prestígio">
+
+                <h3>Prestígio</h3>
+
+                <p>
+                    Massa de chocolate, creme de coco e brigadeiro.
+                </p>
+
+                <button onclick="favoritar('Prestígio')">
+                    ❤️ Favoritar
+                </button>
+
+            </div>
+
+            <!-- BRIGADEIRO -->
+
+            <div class="card">
+
+                <img src="img/brigadeiro.jpg" alt="Chocolate com Brigadeiro">
+
+                <h3>Chocolate com Brigadeiro</h3>
+
+                <p>
+                    Massa de chocolate recheada com brigadeiro gourmet.
+                </p>
+
+                <button onclick="favoritar('Chocolate com Brigadeiro')">
+                    ❤️ Favoritar
+                </button>
+
+            </div>
+
+            <!-- CHOCOLATE BRANCO -->
+
+            <div class="card">
+
+                <img src="img/chocolate-branco.jpg" alt="Chocolate Branco">
+
+                <h3>Chocolate com Chocolate Branco</h3>
+
+                <p>
+                    Massa de chocolate com ganache de chocolate branco.
+                </p>
+
+                <button onclick="favoritar('Chocolate com Chocolate Branco')">
+                    ❤️ Favoritar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAVORITOS -->
+
+    <section id="favoritos" class="favoritos">
+
+        <h2>Meus Favoritos</h2>
+
+        <div id="lista-favoritos">
+
+            <p>Nenhum favorito ainda.</p>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section id="galeria" class="galeria">
+
+        <h2>Galeria</h2>
+
+        <div class="galeria-grid">
+
+            <div class="foto">
+                <img src="img/galeria/foto1.jpg" alt="">
+            </div>
+
+            <div class="foto">
+                <img src="img/galeria/foto2.jpg" alt="">
+            </div>
+
+            <div class="foto">
+                <img src="img/galeria/foto3.jpg" alt="">
+            </div>
+
+            <div class="foto">
+                <img src="img/galeria/foto4.jpg" alt="">
+            </div>
+
+            <div class="foto">
+                <img src="img/galeria/foto5.jpg" alt="">
+            </div>
+
+            <div class="foto">
+                <img src="img/galeria/foto6.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ÁREA DE ATENDIMENTO -->
+
+    <section class="atendimento">
+
+        <h2>Área de Atendimento</h2>
+
+        <p>
+            Atendemos exclusivamente o bairro e regiões próximas.
+        </p>
+
+        <div class="informacoes">
+
+            <div>
+                📍 Entrega Local
+            </div>
+
+            <div>
+                🚴 Entrega Rápida
+            </div>
+
+            <div>
+                🏠 Retirada Disponível
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ -->
+
+    <section id="faq" class="faq">
+
+        <h2>Perguntas Frequentes</h2>
+
+        <details>
+            <summary>Vocês entregam na cidade inteira?</summary>
+
+            <p>
+                Não. Atendemos apenas nosso bairro e regiões próximas.
+            </p>
+
+        </details>
+
+        <details>
+            <summary>Os sabores mudam?</summary>
+
+            <p>
+                Sim. Periodicamente lançamos sabores especiais.
+            </p>
+
+        </details>
+
+        <details>
+            <summary>Como faço meu pedido?</summary>
+
+            <p>
+                Entre em contato pelo WhatsApp.
+            </p>
+
+        </details>
+
+    </section>
+
+    <!-- WHATSAPP -->
+
+    <a
+        href="https://wa.me/5567991823663"
+        target="_blank"
+        class="whatsapp"
+    >
+        💬
+    </a>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <img src="Group 4 (1).png" alt="Logo">
+
+        <p>
+            © 2026 Souvie Bolos & Potes
+        </p>
+
+        <p>
+            Sabor que vira lembrança.
+        </p>
+
+    </footer>
+
+    <script src="programacao.js"></script>
+
+</body>
+</html>
